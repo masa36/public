@@ -1,4 +1,0 @@
-
-var timeInMs = Date.now();
-
-
