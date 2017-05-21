@@ -1,3 +1,5 @@
+// flickr2html.js
+
 (function () {
     var step = 1,
         d = document,
@@ -5,8 +7,8 @@
     var json = {},
     jsonCtr = 0;
     setid = "", photo_id = "";
-    //setの場合の正規表現
-    var getset_id = /^(http|https):\/\/(m|www).flickr.(com\/#\/|com\/)photos\/[\S@]+\/sets\/(\d+)/;
+    //sets or albumsの場合の正規表現
+    var getset_id = /^(http|https):\/\/(m|www).flickr.(com\/#\/|com\/)photos\/[\S@]+\/(sets|albums)\/(\d+)/;
     //1枚だけの場合の正規表現
     var getphoto_id = /^(http|https):\/\/(m|www).flickr.(com\/#\/|com\/)photos\/[\S@]+\/(\d+)[\/\w\d\/]+/;
     //URLを取得
@@ -76,7 +78,7 @@
     //set_idまたはphoto_idの取得
 
     function getId() {
-        if (u.match(/sets/)) {
+        if (u.match(/(sets|albums)/)) {
             var result = u.match(getset_id);
             set_id = result[4];
             step = 3;
@@ -295,7 +297,7 @@
         var x = new Array(bmAry);
 
         // Photoset以外とPhotosetで値が異なる
-        if (u.match(/sets/)) {
+        if (u.match(/(sets|albums)/)) {
             x.username = data.ownername;
             x.photoID = data.id;
             x.userURL = "http://www.flickr.com/photos/" + set_owner + "/";
