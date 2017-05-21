@@ -15,7 +15,7 @@
     var u = location.href;
 
     // 親JSからパラメータを取得
-    var bmBase = 'https://masa36.github.io/public/flickr2html.js';
+    var bmBase = 'https://masa36.github.io/public/flickr2html/flickr2html.js';
     var out = getJs('out'),
         api = getJs('api'),
         fid = getJs('fid'),
