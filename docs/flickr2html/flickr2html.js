@@ -1,5 +1,3 @@
-// flickr2html.js
-
 (function () {
     var step = 1,
         d = document,
