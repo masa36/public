@@ -1,3 +1,4 @@
+
 (function () {
     var step = 1,
         d = document,
@@ -295,7 +296,7 @@
         var x = new Array(bmAry);
 
         // Photoset以外とPhotosetで値が異なる
-        if (u.match(/(sets/)) {
+        if (u.match(/sets/)) {
             x.username = data.ownername;
             x.photoID = data.id;
             x.userURL = "http://www.flickr.com/photos/" + set_owner + "/";
