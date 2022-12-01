@@ -10,52 +10,34 @@
   <!-- is-active-btnクラスを追加 -->
   <a class="tab_btn is-active-btn" href="#item1">タブ1</a>
   <a class="tab_btn" href="#item2">タブ2</a>
-  <a class="tab_btn" href="#item3">タブ3</a>
 
+  <!-- 1 番目のタブ-->
   <div class="tab_item is-active-item" id="item1">
 
-    <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:700px;"
-       src="https://update.runnet.jp/2019saitamakokusai/numberfile/22.html">
-    </iframe>
+    <hr width="90%">
+    <iframe class= "frame_center" src="https://update.runnet.jp/2022syounankokusai/" width="750" height="700"></iframe>
     <hr width="90%">
     <iframe class= "frame_center" src="https://update.runnet.jp/2022tsukuba/numberfile/534.html" width="750" height="700"></iframe>
     <hr width="90%">
-
+    <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:700px;"
+       src="https://update.runnet.jp/2019saitamakokusai/numberfile/22.html">
+    </iframe>
+    
     <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:90%;"
        src="https://update.runnet.jp/2019saitamakokusai/numberfile/104.html">
     </iframe>
+
     <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:700px;"
        src="https://update.runnet.jp/2019saitamakokusai/numberfile/142.html">
     </iframe>
   </div>
   
+  <!-- 2 番目のタブ-->
   <div class="tab_item" id="item2">
-    <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:90%;"
-       src="https://update.runnet.jp/2019saitamakokusai/numberfile/1084.html">
-    </iframe>
-    <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:90%;"
-       src="https://update.runnet.jp/2019saitamakokusai/numberfile/1640.html">
-    </iframe>
-    <iframe id="" style="border-style: none; border-color: inherit; border-width: 0px; height:750px; width:90%;"
-       src="https://update.runnet.jp/2019saitamakokusai/numberfile/1780.html">
-    </iframe>
+    <!-- 2 番目のタブ-->
+    <!-- 2 番目のタブ-->
+    <!-- 2 番目のタブ-->
   </div>
 
-  <div class="tab_item" id="item3">3番目のコンテンツ</div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script>
-    $(function() {
-      $('.tab_btn').on('click', function() {
-        $('.tab_item').removeClass("is-active-item");
-        $($(this).attr("href")).addClass("is-active-item");
-
-        //以下２行を追加
-        $('.tab_btn').removeClass('is-active-btn');
-        $(this).addClass('is-active-btn');
-      });
-    });
-
-  </script>
 </body>
 </html>
