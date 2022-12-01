@@ -1,0 +1,40 @@
+.tab_item {
+  display: none;
+}
+
+.is-active-item {
+  display: block;
+}
+
+/**************/
+/*ここから下を追加*/
+/**************/
+
+/* aタグをブロック要素にする。文字色は親クラスと同様に、下線は消す */
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.tab_btn {
+  font-size: 24px;
+  padding: 5px;
+  background-color: #E0F2F7;
+　　　　display: inline-block; /* ボタンを横並びに。flexboxなどでも可 */
+  opacity: 0.5;  /* 非アクティブなボタンは半透明にする */
+  border-radius: 5px 5px 0 0;
+}
+
+.is-active-btn {
+  opacity: 1;  /* アクティブなボタンは半透明を解除 */
+  color: #00BFFF; /* 文字色も変える */
+}
+
+.tab_item {
+/*  width: 400px; */
+/*  height: 300px;  */
+  padding: 5px;
+  color: #00BFFF;
+  background-color: #E0F2F7;
+}
